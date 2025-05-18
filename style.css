@@ -1,0 +1,141 @@
+
+@font-face {
+    font-family: 'norsebold';
+    src: url('webfont/norse-bold-webfont.woff2') format('woff2'),
+         url('webfont/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+.container {
+    display: flex;
+}
+
+/* Image section */
+.image {
+    width: 40vw;
+    height: 140vh;
+    background-image: url("plant.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 170px;
+    background-color: rgba(0, 0, 0, 0.589);
+}
+
+img[alt = "logo"]{
+    height: 120px;
+    width: 100px;
+}
+.odin {
+    font-family: norsebold;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+}
+
+#footer,
+#footer > *{
+    color: white;
+    text-align: center;
+    margin: auto auto 1rem;
+}
+
+
+/* Form Section */
+
+header {
+    padding: 2rem;
+    margin: 4rem auto 1rem;
+}
+
+main {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+form > *{
+    display: flex;
+    gap: 5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 230px;
+    height: 30px;
+    border-color: #E5E7EB;
+    border-radius: 4px;
+}
+
+p {
+    display: block;
+}
+
+button {
+    width: 175px;
+    height: 35px;
+    background: #596D48;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button,
+p{
+    margin-left:  2rem;
+}
+
+button {
+    margin-top: 1.5rem;
+}
+
+input:focus {
+    outline-color: blue;
+    box-shadow: 2px 2px 4px ;
+}
+
+input[type="password"]:invalid {
+    outline-color: red;
+}
+
+h3.heading {
+    font-weight: 500;
+    font-family: sans-serif;
+}
